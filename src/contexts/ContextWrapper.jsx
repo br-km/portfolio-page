@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-import { ThemeContext, themes } from "./ThemeContext";
+import { Context, themes } from "./Context";
 
-export default function ThemeContextWrapper({ children }) {
+export default function ContextWrapper({ children }) {
   const [theme, setTheme] = useState(themes.light);
 
   useEffect(() => {
@@ -21,8 +21,6 @@ export default function ThemeContextWrapper({ children }) {
   }, [theme]);
 
   return (
-    <ThemeContext.Provider value={[theme, setTheme]}>
-      {children}
-    </ThemeContext.Provider>
+    <Context.Provider value={[theme, setTheme]}>{children}</Context.Provider>
   );
 }

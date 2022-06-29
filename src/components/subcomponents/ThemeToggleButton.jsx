@@ -1,11 +1,11 @@
 import React, { useContext, useState } from "react";
 import { BsMoonFill, BsFillSunFill } from "react-icons/bs";
 import "./ThemeToggleButton.scss";
-import { ThemeContext, themes } from "../../contexts/ThemeContext";
+import { Context, themes } from "../../contexts/Context";
 
 const ThemeToggleButton = () => {
   const [darkMode, setDarkMode] = useState(false);
-  const [theme, setTheme] = useContext(ThemeContext);
+  const [theme, setTheme] = useContext(Context);
 
   const handleChange = () => {
     setDarkMode(!darkMode);
