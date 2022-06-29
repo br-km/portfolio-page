@@ -1,4 +1,6 @@
 import React from "react";
+import { useInView } from "react-hook-inview";
+
 import "./Experience.scss";
 import ExperienceElement from "./subcomponents/ExperienceElement";
 import { DiHtml5, DiCss3, DiSass, DiJqueryLogo } from "react-icons/di";
@@ -7,12 +9,22 @@ import { FaReact } from "react-icons/fa";
 import { BsGithub } from "react-icons/bs";
 
 const Experience = () => {
+  const [ref, isVisible] = useInView({
+    threshold: 1,
+    unobserveOnEnter: true,
+  });
+
   return (
     <section id="experience">
       <h5>Technologie w których mam</h5>
       <h3>Doświadczenie</h3>
 
-      <div className="container experience__container">
+      <div
+        ref={ref}
+        className={`container experience__container ${
+          isVisible ? "active" : ""
+        }`}
+      >
         <div className="experience__frontend">
           <h3>Frontend Development</h3>
           <div className="experience__content">

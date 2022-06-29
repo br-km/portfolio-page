@@ -4,6 +4,12 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
+  transform: scale(0);
+  transition: $transition;
+
+  &.active {
+    transform: scale(1);
+  }
 }
 
 .experience__container > div {

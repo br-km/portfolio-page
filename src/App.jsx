@@ -12,7 +12,6 @@ import Loading from "./components/Loading/Loading";
 
 const App = () => {
   const [loading, setLoading] = useState(true);
-
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
@@ -21,18 +20,6 @@ const App = () => {
 
   return (
     <>
-      {/* {loading ? (
-        <Loading />
-      ) : (
-        <>
-          <Header />
-          <Nav />
-          <About />
-          <Qualification />
-          <Experience />
-          <Portfolio />
-          <Contact />
-          <Footer /> */}
       {loading ? <Loading /> : null}
       <Header />
       <Nav />

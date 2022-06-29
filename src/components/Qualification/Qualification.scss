@@ -6,6 +6,24 @@
   gap: 4rem;
 }
 
+.qualification__education {
+  transform: translateX(-100vw);
+  transition: $transition;
+
+  &.active {
+    transform: translateX(0);
+  }
+}
+
+.qualification__work {
+  transform: translateX(100vw);
+  transition: $transition;
+
+  &.active {
+    transform: translateX(0);
+  }
+}
+
 .qualification__desc {
   color: $color-primary;
   text-align: center;
