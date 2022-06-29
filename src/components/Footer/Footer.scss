@@ -1,0 +1,56 @@
+@import "../../styles/variables";
+
+footer {
+  background: $color-primary;
+  padding: 2rem 0 7rem;
+  text-align: center;
+  margin-top: 5rem;
+}
+
+footer a {
+  color: $color-white;
+}
+
+.navlinks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 1rem;
+
+  & li a:hover {
+    color: #444;
+  }
+}
+
+.footer__socials {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+
+  & a {
+    font-size: 1.5rem;
+    color: $color-dark;
+    margin: 1rem;
+    display: flex;
+    transition: $transition;
+
+    &:hover {
+      color: $color-white;
+    }
+  }
+}
+
+.footer__copyright {
+  color: $color-bg;
+}
+
+//Media Queries
+
+@media screen and (max-width: 600px) {
+  .navlinks {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}

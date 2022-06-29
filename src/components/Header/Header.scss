@@ -1,0 +1,72 @@
+@import "../../styles/variables";
+
+header {
+  padding-top: 1rem;
+  overflow: hidden;
+}
+
+.header__nav {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 12px;
+}
+
+.header__container {
+  text-align: center;
+  height: 100%;
+  position: relative;
+}
+
+.header__wrapper {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.header__photo {
+  width: 80%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.action-btns {
+  margin-top: 2rem;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.header__socials {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  font-size: 1.5rem;
+  color: var(--color-dark);
+}
+
+//Media query - tablets
+
+@media screen and (max-width: 1300px) {
+  .header__photo {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .header__photo {
+    width: 80%;
+  }
+}
+
+//Media query - phones
+
+@media screen and (max-width: 600px) {
+  .header__wrapper {
+    flex-direction: column;
+  }
+
+  .header__texts {
+    margin: 2rem 0;
+  }
+}

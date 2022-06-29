@@ -1,0 +1,35 @@
+$color-bg: #fcfcfc;
+$color-bg-variant: #fff;
+$color-dark: #444;
+$color-primary: #2978b5;
+$color-primary-variant: #094c66;
+$color-white: #fff;
+
+$shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+$container-width-lg: 75%;
+$container-width-md: 86%;
+$container-width-sm: 90%;
+
+$transition: all 400ms ease;
+
+body {
+  --color-bg: #fcfcfc;
+  --color-bg-variant: #fff;
+  --color-dark: #444;
+  --color-gradient: linear-gradient(to bottom right, #ece9e6, #efefef);
+
+  --color-desc: #767676;
+
+  --opacity: 0.5;
+}
+body.dark-theme {
+  --color-bg: #333;
+  --color-bg-variant: #444;
+  --color-dark: #fff;
+  --color-gradient: linear-gradient(to bottom right, #444, #212121);
+
+  --color-desc: #a2a2a2;
+
+  --opacity: 0.25;
+}

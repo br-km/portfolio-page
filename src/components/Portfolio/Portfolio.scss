@@ -1,0 +1,73 @@
+@import "../../styles/variables";
+
+// .portfolio__container {
+//   display: grid;
+//   grid-template-columns: repeat(3, 1fr);
+//   gap: 2rem;
+// }
+
+.portfolio__container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.portfolio__item {
+  flex-basis: 31.33%;
+  background: var(--color-bg-variant);
+  color: var(--color-dark);
+  padding: 1.2rem;
+  border-radius: 2rem;
+  box-shadow: $shadow;
+  transition: $transition;
+  display: flex;
+  flex-direction: column;
+
+  &-image {
+    border-radius: 1.5rem;
+    overflow: hidden;
+    max-height: 276.67px;
+  }
+
+  & h3 {
+    margin: 1.2rem 0 2rem;
+  }
+
+  &-btns {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    flex-grow: 1;
+    align-items: flex-end;
+    & .text {
+      margin-left: 14px;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .portfolio__container {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.2rem;
+  }
+  .portfolio__item {
+    flex-basis: 40%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .portfolio__item {
+    flex-basis: 20%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .portfolio__container {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .portfolio__item {
+    flex-basis: 100%;
+  }
+}

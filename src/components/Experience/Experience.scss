@@ -1,0 +1,138 @@
+@import "../../styles/variables";
+
+.experience__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.experience__container > div {
+  background: var(--color-bg-variant);
+  padding: 3rem 2rem;
+  border-radius: 2rem;
+  box-shadow: $shadow;
+  transition: $transition;
+
+  & h3 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: $color-primary;
+  }
+}
+
+.experience__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 2rem;
+}
+
+.experience__details {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+
+  &-desc {
+    width: 100%;
+    margin-right: 1rem;
+  }
+  & h4 {
+    color: var(--color-desc);
+    font-weight: normal;
+    min-width: 10rem;
+  }
+}
+
+.bar-label {
+  color: $color-white;
+  font-size: 0.8rem;
+  margin-right: 4px;
+}
+
+.experience__details-icon {
+  margin-top: 6px;
+  color: var(--color-dark);
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 1400px) {
+  .experience__container {
+    grid-template-columns: 1fr;
+
+    & > div {
+      width: 80%;
+      padding: 2rem;
+      margin: 0 auto;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .experience__container {
+    grid-template-columns: 1fr;
+
+    & > div {
+      width: 80%;
+      padding: 2rem;
+      margin: 0 auto;
+    }
+  }
+  .experience__content {
+    padding: 1rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .experience__container {
+    gap: 1rem;
+
+    & > div {
+      width: 90%;
+      padding: 2rem 1rem;
+    }
+  }
+
+  .experience__content {
+    row-gap: 2rem;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .experience__container {
+    gap: 1rem;
+
+    & > div {
+      width: 100%;
+      padding: 2rem 1rem;
+    }
+  }
+
+  .experience__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 2rem;
+  }
+
+  .experience__details {
+    display: flex;
+    gap: 1rem;
+
+    & h4 {
+      color: var(--color-desc);
+      font-weight: normal;
+    }
+  }
+
+  .bar-label {
+    color: $color-white;
+    font-size: 0.8rem;
+    margin-right: 4px;
+  }
+
+  .experience__details-icon {
+    margin-top: 6px;
+    color: var(--color-dark);
+    font-size: 2rem;
+  }
+}
