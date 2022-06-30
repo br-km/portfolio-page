@@ -3,7 +3,7 @@ import React from "react";
 import Buttons from "../subcomponents/Buttons";
 import Socials from "../subcomponents/Socials";
 import ThemeToggleButton from "../subcomponents/ThemeToggleButton";
-// import { ReactComponent as Photo } from "../../assets/header-photo-animated.svg";
+import ReactTypingEffect from "react-typing-effect";
 import { ReactComponent as Photo } from "../../assets/picture.svg";
 import CV from "../../assets/cv.pdf";
 import "./Header.scss";
@@ -20,7 +20,16 @@ const Header = () => {
             <h1>
               Cześć, jestem <span>Kamil Malesa.</span>
             </h1>
-            <h2 className="text-dark">Frontend Developer</h2>
+            <h2 className="text-dark">
+              {" "}
+              <ReactTypingEffect
+                speed={100}
+                typingDelay={2000}
+                eraseSpeed={100}
+                eraseDelay={3000}
+                text={"Frontend Developer"}
+              />
+            </h2>
             <div className="header__socials">
               <Socials />
             </div>
