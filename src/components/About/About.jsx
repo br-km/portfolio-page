@@ -15,17 +15,17 @@ const About = () => {
         </div>
         <div className="about__content">
           <p>
-            Cześć, jestem Kamil. Mam 27 lat. Pochodzę z Kielc, a aktualnie
-            mieszkam we Wrocławiu. Na co dzień zajmuje się programowaniem
-            robotów i systemów automatyki przemysłowej. Projektuje również
-            panele operatorskie HMI/SCADA. Moje zainteresowanie frontendem
-            zaczęło się w zeszłym roku i wynika z technologii przemysłowych w
-            których aktualnie pracuje. W wolnych chwilach lubię grzebać przy
-            aucie, oraz chętnie gram w MMORPG. Od czasu do czasu zdarza mi się
-            poszarpać za struny w gitarze elektrycznej, oraz pokopać piłkę.
-            Interesuje się sportem, motoryzacją, kinem, oraz elektroniką.
-            Poszukuję miejsca pracy, gdzie mógłbym rozwinąć swoje umiejętności
-            frontendowe jak również inne technologie z tym związane.
+            Cześć, jestem Kamil, mam 27 lat i aktualnie mieszkam we Wrocławiu.
+            Na co dzień zajmuje się programowaniem robotów i systemów automatyki
+            przemysłowej, oraz projektuje również panele operatorskie HMI/SCADA.
+            Moje zainteresowanie frontendem zaczęło się w zeszłym roku i wynika
+            z technologii przemysłowych w których aktualnie pracuje. W wolnych
+            chwilach lubię grzebać przy aucie, oraz chętnie gram w MMORPG. Od
+            czasu do czasu zdarza mi się poszarpać za struny w gitarze
+            elektrycznej, oraz pokopać piłkę. Interesuje się sportem,
+            motoryzacją, kinem, oraz elektroniką. Poszukuję miejsca pracy, gdzie
+            mógłbym rozwinąć swoje umiejętności frontendowe jak również inne
+            technologie z tym związane.
           </p>
         </div>
       </div>
