@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./Nav.scss";
 import {
   AiOutlineHome,
@@ -8,10 +8,50 @@ import {
 
 import { BiMessageDetail, BiBookOpen } from "react-icons/bi";
 
-import { useState } from "react";
+import useWindowDimensions from "../../helpers/WindowsDimensions";
 
 const Nav = () => {
   const [activeNav, setActiveNav] = useState("#");
+
+  const {
+    height,
+    scroll,
+    aboutHeight,
+    aboutOffset,
+    experienceHeight,
+    experienceOffset,
+    portfolioHeight,
+    portfolioOffset,
+    contactHeight,
+    contactOffset,
+  } = useWindowDimensions();
+
+  console.log(`Offset: ${aboutOffset}`);
+  console.log(`Height: ${aboutHeight}`);
+  console.log(`Window: ${height}`);
+  console.log(`Scroll: ${scroll}`);
+  console.log(`Wynik: ${aboutOffset * aboutHeight - height}`);
+  useEffect(() => {
+    if (scroll < 100) {
+      setActiveNav("#");
+    } else {
+      if (scroll > aboutOffset * aboutHeight - height) {
+        setActiveNav("#about");
+      }
+
+      if (scroll > experienceOffset * experienceHeight - height) {
+        setActiveNav("#experience");
+      }
+
+      if (scroll > portfolioOffset * portfolioHeight - height) {
+        setActiveNav("#portfolio");
+      }
+
+      if (scroll > contactOffset * contactHeight - height) {
+        setActiveNav("#contact");
+      }
+    }
+  }, [scroll]);
 
   return (
     <nav>
@@ -38,8 +78,8 @@ const Nav = () => {
       </a>
       <a
         href="#portfolio"
-        onClick={() => setActiveNav("#services")}
-        className={activeNav === "#services" ? "active" : ""}
+        onClick={() => setActiveNav("#portfolio")}
+        className={activeNav === "#portfolio" ? "active" : ""}
       >
         <AiOutlineFundProjectionScreen />
       </a>
