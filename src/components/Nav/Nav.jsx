@@ -51,10 +51,12 @@ const Nav = () => {
         setActiveNav("#contact");
       }
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [scroll]);
 
   return (
     <nav>
+      {/* eslint-disable-next-line jsx-a11y/anchor-is-valid*/}
       <a
         href="#"
         onClick={() => setActiveNav("#")}
