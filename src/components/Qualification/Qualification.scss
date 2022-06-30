@@ -1,5 +1,9 @@
 @import "../../styles/variables";
 
+#qualifications {
+  overflow: hidden;
+}
+
 .qualifications__container {
   display: grid;
   grid-template-columns: 1fr 1fr;
