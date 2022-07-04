@@ -26,11 +26,6 @@ const Nav = () => {
     contactOffset,
   } = useWindowDimensions();
 
-  console.log(`Offset: ${aboutOffset}`);
-  console.log(`Height: ${aboutHeight}`);
-  console.log(`Window: ${height}`);
-  console.log(`Scroll: ${scroll}`);
-  console.log(`Wynik: ${aboutOffset * aboutHeight - height}`);
   useEffect(() => {
     if (scroll < 100) {
       setActiveNav("#");
