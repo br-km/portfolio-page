@@ -28,39 +28,17 @@ const Experience = () => {
         <div className="experience__frontend">
           <h3>Frontend Development</h3>
           <div className="experience__content">
-            <ExperienceElement
-              title={"HTML"}
-              exp={"Zaawansowany"}
-              icon={<DiHtml5 />}
-              level={60}
-            />
-            <ExperienceElement
-              title={"CSS"}
-              exp={"Zaawansowany"}
-              icon={<DiCss3 />}
-              level={60}
-            />
+            <ExperienceElement title={"HTML"} icon={<DiHtml5 />} level={60} />
+            <ExperienceElement title={"CSS"} icon={<DiCss3 />} level={60} />
             <ExperienceElement
               title={"JavaScript"}
-              exp={"Zaawansowany"}
               icon={<IoLogoJavascript />}
               level={60}
             />
-            <ExperienceElement
-              title={"React"}
-              exp={"Zaawansowany"}
-              icon={<FaReact />}
-              level={40}
-            />
-            <ExperienceElement
-              title={"Sass"}
-              exp={"Zaawansowany"}
-              icon={<DiSass />}
-              level={70}
-            />
+            <ExperienceElement title={"React"} icon={<FaReact />} level={50} />
+            <ExperienceElement title={"Sass"} icon={<DiSass />} level={60} />
             <ExperienceElement
               title={"JQuery"}
-              exp={"Zaawansowany"}
               icon={<DiJqueryLogo />}
               level={50}
             />
@@ -73,16 +51,10 @@ const Experience = () => {
           <div className="experience__content">
             <ExperienceElement
               title={"Node JS"}
-              exp={"Początkujący"}
               icon={<IoLogoNodejs />}
               level={20}
             />
-            <ExperienceElement
-              title={"Git"}
-              exp={"Średnio zaawansowany"}
-              icon={<BsGithub />}
-              level={60}
-            />
+            <ExperienceElement title={"Git"} icon={<BsGithub />} level={50} />
           </div>
         </div>
       </div>
