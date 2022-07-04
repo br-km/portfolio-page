@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import "./Contact.scss";
 
@@ -10,6 +10,7 @@ import ContactOption from "./subcomponents/ContactOption";
 
 const Contact = () => {
   const form = useRef();
+  const [message, setMessage] = useState("");
 
   const handleSendEmail = (e) => {
     e.preventDefault();
@@ -24,9 +25,17 @@ const Contact = () => {
       .then(
         (result) => {
           console.log(result.text);
+          setMessage("Wiadomość wysłana poprawnie");
+          setTimeout(() => {
+            setMessage("");
+          }, 5000);
         },
         (error) => {
           console.log(error.text);
+          setMessage("Błąd wysyłania wiadomości");
+          setTimeout(() => {
+            setMessage("");
+          }, 5000);
         }
       );
 
@@ -48,13 +57,6 @@ const Contact = () => {
       name: "Kamil Malesa",
       href: "https://www.linkedin.com/in/kamil-malesa-564b2b1b8/",
     },
-    // {
-    //   id: 3,
-    //   title: "WhatsApp",
-    //   icon: <BsGithub />,
-    //   name: "+123456789",
-    //   href: "https://api.whatsapp.com/send?phone=123456789",
-    // },
   ];
 
   const contacts = options.map(({ id, icon, title, name, href }) => {
@@ -68,7 +70,7 @@ const Contact = () => {
       />
     );
   });
-
+  console.log(form);
   return (
     <section id="contact">
       <h5>Jeśli chodzi o</h5>
@@ -76,27 +78,37 @@ const Contact = () => {
       <div className="container contact__container">
         <div className="contact__options">{contacts}</div>
         <form ref={form} onSubmit={handleSendEmail} action="">
-          <input
-            type="text"
-            name="name"
-            placeholder="Twoje imię i nazwisko"
-            id=""
-            required
-          />
-          <input
-            type="email"
-            name="email"
-            placeholder="Twój adres email"
-            id=""
-            required
-          />
-          <textarea
-            name="message"
-            rows="10"
-            placeholder="Twoja wiadomość"
-            id=""
-            required
-          ></textarea>
+          <div className="form__group">
+            <label>Imię i nazwisko</label>
+            <input
+              type="text"
+              name="name"
+              placeholder="Imię i nazwisko"
+              id=""
+              required
+            />
+          </div>
+          <div className="form__group">
+            <label>Adres email</label>
+            <input
+              type="email"
+              name="email"
+              placeholder="Adres email"
+              id=""
+              required
+            />
+          </div>
+          <div className="form__group">
+            <label>Wiadomość</label>
+            <textarea
+              name="message"
+              rows="10"
+              placeholder="Wiadomość"
+              id=""
+              required
+            ></textarea>
+          </div>
+          <div className="form__message">{message}</div>
           <button type="submit" className="btn btn-primary">
             Wyślij wiadomość
           </button>
