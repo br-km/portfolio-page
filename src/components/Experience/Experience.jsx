@@ -35,7 +35,11 @@ const Experience = () => {
               icon={<IoLogoJavascript />}
               level={60}
             />
-            <ExperienceElement title={"React"} icon={<FaReact />} level={50} />
+            <ExperienceElement
+              title={"React.js"}
+              icon={<FaReact />}
+              level={50}
+            />
             <ExperienceElement title={"Sass"} icon={<DiSass />} level={60} />
             <ExperienceElement
               title={"JQuery"}
@@ -50,7 +54,7 @@ const Experience = () => {
           <h3>Inne</h3>
           <div className="experience__content">
             <ExperienceElement
-              title={"Node JS"}
+              title={"Node.js"}
               icon={<IoLogoNodejs />}
               level={20}
             />
