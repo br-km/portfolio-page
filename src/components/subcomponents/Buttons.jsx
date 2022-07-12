@@ -7,6 +7,7 @@ const Buttons = ({
   primaryHref,
   target = "",
   rel = "",
+  primaryVisible = true,
 }) => {
   return (
     <div className="action-btns">
@@ -18,14 +19,18 @@ const Buttons = ({
           {shapedText}
         </a>
       </div>
-      <a
-        href={primaryHref}
-        className="btn btn-primary"
-        target={target}
-        rel={rel}
-      >
-        {primaryText}
-      </a>
+      {primaryVisible ? (
+        <a
+          href={primaryHref}
+          className="btn btn-primary"
+          target={target}
+          rel={rel}
+        >
+          {primaryText}
+        </a>
+      ) : (
+        ""
+      )}
     </div>
   );
 };
