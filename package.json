@@ -19,7 +19,7 @@
     "sass": "^1.52.3",
     "web-vitals": "^2.1.4"
   },
-  "homepage": "https://br-km.github.io/portfolio-page",
+  "homepage": "https://mlska.github.io/portfolio-page",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
