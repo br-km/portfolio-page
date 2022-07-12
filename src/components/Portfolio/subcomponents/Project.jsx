@@ -1,7 +1,14 @@
 import React from "react";
 import Buttons from "../../subcomponents/Buttons";
 
-const Project = ({ image, hrefCode, hrefDemo, title, text }) => {
+const Project = ({
+  image,
+  hrefCode,
+  hrefDemo,
+  title,
+  text,
+  livePreview = true,
+}) => {
   return (
     <article className="portfolio__item">
       <div className="portfolio__item-image">
@@ -14,9 +21,10 @@ const Project = ({ image, hrefCode, hrefDemo, title, text }) => {
           shapedHref={hrefCode}
           shapedText="Zobacz kod"
           primaryHref={hrefDemo}
-          primaryText="Podgląd live"
+          primaryText="Podgląd"
           target="_blank"
           rel="noopener noreferrer"
+          primaryVisible={livePreview}
         />
       </div>
     </article>
