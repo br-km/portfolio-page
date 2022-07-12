@@ -55,7 +55,7 @@ const Contact = () => {
       title: "LinkedIn",
       icon: <BsLinkedin />,
       name: "Kamil Malesa",
-      href: "https://www.linkedin.com/in/kamil-malesa-564b2b1b8/",
+      href: "https://www.linkedin.com/in/kamil-malesa/",
     },
   ];
 
