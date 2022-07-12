@@ -1,6 +1,6 @@
 import React from "react";
 import "./About.scss";
-import myPhoto from "../../assets/me-about.jpg";
+import myPhoto from "../../assets/photo.jpg";
 
 const About = () => {
   return (
@@ -20,12 +20,12 @@ const About = () => {
             przemysłowej, oraz projektuje panele operatorskie HMI/SCADA. Moje
             zainteresowanie frontendem zaczęło się w zeszłym roku i wynika z
             technologii przemysłowych w których aktualnie pracuje. W wolnych
-            chwilach lubię grzebać przy aucie, oraz chętnie gram w MMORPG. Od
+            chwilach lubię majstrować przy aucie, oraz chętnie gram w MMORPG. Od
             czasu do czasu zdarza mi się poszarpać za struny w gitarze
-            elektrycznej, oraz pokopać piłkę. Interesuje się sportem,
-            motoryzacją, kinem, oraz elektroniką. Poszukuję miejsca pracy, gdzie
-            mógłbym rozwinąć swoje umiejętności frontendowe jak również inne
-            technologie z tym związane.
+            elektrycznej, oraz pokopać piłkę. Interesuje się głównie sportem i
+            motoryzacją. Poszukuję miejsca pracy, gdzie mógłbym rozwinąć swoje
+            umiejętności frontendowe jak również inne technologie z tym
+            związane.
           </p>
         </div>
       </div>
