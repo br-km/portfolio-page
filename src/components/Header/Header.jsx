@@ -5,7 +5,7 @@ import Socials from "../subcomponents/Socials";
 import ThemeToggleButton from "../subcomponents/ThemeToggleButton";
 import ReactTypingEffect from "react-typing-effect";
 import { ReactComponent as Photo } from "../../assets/picture.svg";
-import CV from "../../assets/cv.pdf";
+import CV from "../../assets/cv-kamil-malesa.pdf";
 import "./Header.scss";
 
 const Header = () => {
