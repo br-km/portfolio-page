@@ -31,15 +31,6 @@ const Portfolio = () => {
     },
     {
       id: 3,
-      title: "Symulator sklepu",
-      hrefCode: "https://github.com/mlska/react-shop",
-      hrefDemo: "http://github.com",
-      image: image3,
-      text: "Projekt będący symulatorem sklepu napisany w React, wykorzystujący serwer node.js do pobierania danych",
-      livePreview: false,
-    },
-    {
-      id: 4,
       title: "Manager urlopów",
       hrefCode: "https://github.com/mlska/holiday-manager",
       hrefDemo: "http://github.com",
