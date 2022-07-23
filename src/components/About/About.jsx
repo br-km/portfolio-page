@@ -17,15 +17,14 @@ const About = () => {
           <p>
             Jestem Kamil, mam 27 lat i aktualnie mieszkam we Wrocławiu. Na co
             dzień zajmuje się programowaniem robotów i systemów automatyki
-            przemysłowej, oraz projektuje panele operatorskie HMI/SCADA. Moje
+            przemysłowej oraz projektuje panele operatorskie HMI/SCADA. Moje
             zainteresowanie frontendem zaczęło się w zeszłym roku i wynika z
             technologii przemysłowych w których aktualnie pracuje. W wolnych
-            chwilach lubię majstrować przy aucie, oraz chętnie gram w MMORPG. Od
-            czasu do czasu zdarza mi się poszarpać za struny w gitarze
-            elektrycznej, oraz pokopać piłkę. Interesuje się głównie sportem i
+            chwilach lubię majstrować przy aucie, jak również chętnie gram w
+            MMORPG. Od czasu do czasu zdarza mi się pokopać piłkę oraz poszarpać
+            za struny w gitarze elektrycznej. Interesuje się głównie sportem i
             motoryzacją. Poszukuję miejsca pracy, gdzie mógłbym rozwinąć swoje
-            umiejętności frontendowe jak również inne technologie z tym
-            związane.
+            umiejętności frontendowe, a także inne technologie z tym związane.
           </p>
         </div>
       </div>
