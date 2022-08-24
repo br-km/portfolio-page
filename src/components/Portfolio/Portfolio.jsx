@@ -5,8 +5,7 @@ import "./Portfolio.scss";
 import Project from "./subcomponents/Project";
 
 import image1 from "../../assets/br-website2.png";
-import image2 from "../../assets/game2.png";
-import image3 from "../../assets/shop2.png";
+import image2 from "../../assets/crypto-wallet.png";
 import image4 from "../../assets/manager.png";
 
 const Portfolio = () => {
@@ -22,12 +21,12 @@ const Portfolio = () => {
     },
     {
       id: 2,
-      title: 'Gra "papier, kamień, nożyce" ',
-      hrefCode: "https://github.com/mlska/rock-paper-scissors",
-      hrefDemo: "http://github.com",
+      title: 'Portfel kryptowalut" ',
+      hrefCode: "https://github.com/mlska/crypto-wallet",
+      hrefDemo: "https://mlska.github.io/crypto-wallet/",
       image: image2,
-      text: "Prosta i lubiana przez każdego gra zaprogramowana w JavaScript",
-      livePreview: false,
+      text: "Aplikacja symulująca giełdę kryptowalut. Wykorzystująca React.js, RestAPI, Store, Webpack, Axios",
+      livePreview: true,
     },
     {
       id: 3,
