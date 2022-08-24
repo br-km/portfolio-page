@@ -1,20 +1,19 @@
 {
   "files": {
     "main.css": "/portfolio-page/static/css/main.3f620e3d.css",
-    "main.js": "/portfolio-page/static/js/main.0d0368d8.js",
+    "main.js": "/portfolio-page/static/js/main.01955173.js",
+    "static/media/crypto-wallet.png": "/portfolio-page/static/media/crypto-wallet.4adaaa291d39132edaa8.png",
     "static/media/br-website2.png": "/portfolio-page/static/media/br-website2.223848585e892249585e.png",
     "static/media/photo.jpg": "/portfolio-page/static/media/photo.af214801bc5b8150f17a.jpg",
-    "static/media/shop2.png": "/portfolio-page/static/media/shop2.b502db275793ba000762.png",
-    "static/media/game2.png": "/portfolio-page/static/media/game2.49dfb1407ddcb5e5f31a.png",
-    "static/media/cv-kamil-malesa.pdf": "/portfolio-page/static/media/cv-kamil-malesa.0409bebdd2b5dcdd3db5.pdf",
+    "static/media/cv-kamil-malesa.pdf": "/portfolio-page/static/media/cv-kamil-malesa.6daff1302e3ee0287fce.pdf",
     "static/media/manager.png": "/portfolio-page/static/media/manager.bf0f0dc9296a01d7353d.png",
     "static/media/picture.svg": "/portfolio-page/static/media/picture.6ada1208e454386304c48752251429c0.svg",
     "index.html": "/portfolio-page/index.html",
     "main.3f620e3d.css.map": "/portfolio-page/static/css/main.3f620e3d.css.map",
-    "main.0d0368d8.js.map": "/portfolio-page/static/js/main.0d0368d8.js.map"
+    "main.01955173.js.map": "/portfolio-page/static/js/main.01955173.js.map"
   },
   "entrypoints": [
     "static/css/main.3f620e3d.css",
-    "static/js/main.0d0368d8.js"
+    "static/js/main.01955173.js"
   ]
 }
