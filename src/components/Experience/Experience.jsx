@@ -21,6 +21,7 @@ const Experience = () => {
   const [ref, isVisible] = useInView({
     threshold: 1,
     unobserveOnEnter: true,
+    rootMargin: "250px",
   });
 
   return (
