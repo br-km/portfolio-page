@@ -80,12 +80,10 @@ const Qualification = () => {
             {/* Content 1 */}
             <div className="qualification__data">
               <div>
-                <h3 className="qualification__title">Frontend Developer</h3>
-                <span className="qualification__place">
-                  Poszukiwane miejsce :)
-                </span>
+                <h3 className="qualification__title">Programista JavaScript</h3>
+                <span className="qualification__place">Toya S.A.</span>
                 <div className="qualification__calendar">
-                  <FaCalendarAlt /> 2022 -
+                  <FaCalendarAlt /> 12.2022 -
                 </div>
               </div>
               <div>
@@ -107,7 +105,7 @@ const Qualification = () => {
                   Blue Robotics Sp. z o.o.
                 </span>
                 <div className="qualification__calendar">
-                  <FaCalendarAlt /> 2018 - Aktualnie
+                  <FaCalendarAlt /> 12.2018 - 12.2022
                 </div>
               </div>
             </div>
