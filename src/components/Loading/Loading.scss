@@ -9,7 +9,7 @@
   align-items: center;
   justify-content: center;
   z-index: 3;
-  animation: switchon 3s 3s;
+  animation: display 1ms 3300ms forwards;
 }
 
 .loading__container {
@@ -21,7 +21,7 @@
   & span {
     display: block;
     background-color: $color-primary;
-    animation: loading-effect 1s ease 3;
+    animation: loading-effect 1s ease 3 forwards;
 
     &:nth-child(3) {
       animation-delay: 1s;
@@ -62,14 +62,80 @@
   }
 }
 
-@keyframes switchon {
+@keyframes display {
+  from {
+  }
+  to {
+    visibility: hidden;
+  }
+}
+
+.tv__wrapper {
+  animation: display 1ms 4500ms forwards;
+}
+
+.tv {
+  position: fixed;
+  background-color: #fff;
+  height: 50vh;
+  animation-duration: 0.5s, 0.5s;
+  animation-delay: 3.5s, 2.8s;
+  animation-timing-function: linear, linear;
+  animation-fill-mode: forwards, forwards;
+  z-index: 4;
+}
+
+.tv__top {
+  border-bottom: 1px solid $color-primary;
+  animation-name: switchOnTop, resizeTop;
+}
+
+.tv__bottom {
+  top: 50%;
+  border-top: 1px solid $color-primary;
+  animation-name: switchOnBottom, resizeBottom;
+}
+
+@keyframes resizeTop {
   0% {
-    opacity: 1;
+    width: 0;
+    left: 50%;
   }
-  50% {
-    opacity: 0.5;
-  }
+
   100% {
-    opacity: 0;
+    width: 100vw;
+    left: 0;
+  }
+}
+
+@keyframes resizeBottom {
+  0% {
+    width: 0;
+    right: 50%;
+  }
+
+  100% {
+    width: 100vw;
+    right: 0;
+  }
+}
+
+@keyframes switchOnTop {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+@keyframes switchOnBottom {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(100%);
   }
 }

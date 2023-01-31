@@ -11,16 +11,9 @@ import Qualification from "./components/Qualification/Qualification";
 import Loading from "./components/Loading/Loading";
 
 const App = () => {
-  const [loading, setLoading] = useState(true);
-  useEffect(() => {
-    setTimeout(() => {
-      setLoading(false);
-    }, 4000);
-  }, []);
-
   return (
     <>
-      {loading ? <Loading /> : null}
+      <Loading />
       <Header />
       <Nav />
       <About />
