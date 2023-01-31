@@ -21,7 +21,7 @@ const Portfolio = () => {
     },
     {
       id: 2,
-      title: 'Portfel kryptowalut" ',
+      title: "Portfel kryptowalut",
       hrefCode: "https://github.com/mlska/crypto-wallet",
       hrefDemo: "https://mlska.github.io/crypto-wallet/",
       image: image2,
