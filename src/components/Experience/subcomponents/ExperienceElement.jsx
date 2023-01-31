@@ -7,7 +7,7 @@ const ExperienceElement = ({ title, icon, level }) => {
       <div className="experience__details-icon">{icon}</div>
       <div className="experience__details-desc">
         <h4>{title}</h4>
-        <div className="bar">
+        {/* <div className="bar">
           <ProgressBar
             completed={level}
             bgColor="#2978b5"
@@ -15,7 +15,7 @@ const ExperienceElement = ({ title, icon, level }) => {
             height="16px"
             labelClassName="bar-label"
           />
-        </div>
+        </div> */}
       </div>
     </article>
   );

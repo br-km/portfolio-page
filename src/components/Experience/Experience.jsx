@@ -7,6 +7,15 @@ import { DiHtml5, DiCss3, DiSass, DiJqueryLogo } from "react-icons/di";
 import { IoLogoJavascript, IoLogoNodejs } from "react-icons/io";
 import { FaReact } from "react-icons/fa";
 import { BsGithub } from "react-icons/bs";
+import {
+  SiTypescript,
+  SiTailwindcss,
+  SiSap,
+  SiDocker,
+  SiPostgresql,
+  SiPrisma,
+} from "react-icons/si";
+import { TbBrandNextjs, TbApi } from "react-icons/tb";
 
 const Experience = () => {
   const [ref, isVisible] = useInView({
@@ -46,6 +55,22 @@ const Experience = () => {
               icon={<DiJqueryLogo />}
               level={50}
             />
+            <ExperienceElement
+              title={"TypeScript"}
+              icon={<SiTypescript />}
+              level={50}
+            />
+            <ExperienceElement
+              title={"Tailwindcss"}
+              icon={<SiTailwindcss />}
+              level={50}
+            />
+            <ExperienceElement title={"UI5"} icon={<SiSap />} level={50} />
+            <ExperienceElement
+              title={"Nextjs"}
+              icon={<TbBrandNextjs />}
+              level={50}
+            />
           </div>
         </div>
 
@@ -59,6 +84,22 @@ const Experience = () => {
               level={20}
             />
             <ExperienceElement title={"Git"} icon={<BsGithub />} level={50} />
+            <ExperienceElement title={"REST"} icon={<TbApi />} level={50} />
+            <ExperienceElement
+              title={"PostgreSQL"}
+              icon={<SiPostgresql />}
+              level={50}
+            />
+            <ExperienceElement
+              title={"Docker"}
+              icon={<SiDocker />}
+              level={50}
+            />
+            <ExperienceElement
+              title={"Prisma"}
+              icon={<SiPrisma />}
+              level={50}
+            />
           </div>
         </div>
       </div>

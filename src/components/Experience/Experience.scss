@@ -14,7 +14,7 @@
 
 .experience__container > div {
   background: var(--color-bg-variant);
-  padding: 3rem 2rem;
+  padding: 3rem 3rem;
   border-radius: 2rem;
   box-shadow: $shadow;
   transition: $transition;
@@ -29,7 +29,7 @@
 .experience__content {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  row-gap: 2rem;
+  row-gap: 1rem;
 }
 
 .experience__details {
@@ -40,11 +40,18 @@
   &-desc {
     width: 100%;
     margin-right: 1rem;
+    display: flex;
+    align-items: center;
   }
   & h4 {
     color: var(--color-desc);
-    font-weight: normal;
     min-width: 10rem;
+    font-size: 1rem;
+  }
+  &-icon {
+    margin-top: 6px;
+    color: var(--color-dark);
+    font-size: 3rem;
   }
 }
 
@@ -52,12 +59,6 @@
   color: $color-white;
   font-size: 0.8rem;
   margin-right: 4px;
-}
-
-.experience__details-icon {
-  margin-top: 6px;
-  color: var(--color-dark);
-  font-size: 2rem;
 }
 
 @media screen and (max-width: 1400px) {
