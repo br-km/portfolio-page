@@ -11,14 +11,14 @@ const Buttons = ({
 }) => {
   return (
     <div className="action-btns">
-      <div className="btn-shaped">
+      <a href={shapedHref} className="btn-shaped">
         <svg height="53" width="125" xmlns="http://www.w3.org/2000/svg">
           <rect className="shape" height="53" width="125" />
         </svg>
-        <a href={shapedHref} className="text" target={target} rel={rel}>
+        <div className="text" target={target} rel={rel}>
           {shapedText}
-        </a>
-      </div>
+        </div>
+      </a>
       {primaryVisible ? (
         <a
           href={primaryHref}
