@@ -16,15 +16,13 @@ const About = () => {
         <div className="about__content">
           <p>
             Jestem Kamil, mam 27 lat i aktualnie mieszkam we Wrocławiu. Na co
-            dzień zajmuje się programowaniem robotów i systemów automatyki
-            przemysłowej oraz projektuje panele operatorskie HMI/SCADA. Moje
-            zainteresowanie frontendem zaczęło się w zeszłym roku i wynika z
-            technologii przemysłowych w których aktualnie pracuje. W wolnych
-            chwilach lubię majstrować przy aucie, jak również chętnie gram w
-            MMORPG. Od czasu do czasu zdarza mi się pokopać piłkę oraz poszarpać
-            za struny w gitarze elektrycznej. Interesuje się głównie sportem i
-            motoryzacją. Poszukuję miejsca pracy, gdzie mógłbym rozwinąć swoje
-            umiejętności frontendowe, a także inne technologie z tym związane.
+            dzień zajmuje się programowaniem aplikacji webowych we frameworku
+            SAPUI5. W wolnych chwilach lubię majsterkować przy aucie, jak
+            również chętnie gram w gry komputerowe. Od czasu do czasu zdarza mi
+            się pokopać piłkę lub pobiegać. Interesuje się głównie sportem i
+            motoryzacją, ale dobry film lub serial potrafi mnie równie mocno
+            wciągnąć. Staram się rozwijać swoje umiejętności frontendowe, a
+            także chętnie klikam coś na backendzie.
           </p>
         </div>
       </div>

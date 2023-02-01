@@ -12,7 +12,8 @@
   border-radius: 2rem;
   background: var(--color-gradient);
   display: grid;
-  place-items: center;
+  align-self: center;
+  justify-self: center;
 
   &-image {
     border-radius: 2rem;
